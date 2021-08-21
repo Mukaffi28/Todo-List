@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         final TextAdapter adapter = new TextAdapter();
 // ASDFGH
   // aust pera de keno
+  // GIT
         adapter.setData(list);
         Task_List.setAdapter(adapter);
 
