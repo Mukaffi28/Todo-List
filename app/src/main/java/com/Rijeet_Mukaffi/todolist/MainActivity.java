@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.addtask);
         final ListView Task_List =findViewById(R.id.list);
         final TextAdapter adapter = new TextAdapter();
-
+// ASDFGH
         adapter.setData(list);
         Task_List.setAdapter(adapter);
 
