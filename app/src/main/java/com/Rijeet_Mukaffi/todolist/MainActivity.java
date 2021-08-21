@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         final ListView Task_List =findViewById(R.id.list);
         final TextAdapter adapter = new TextAdapter();
 // ASDFGH
+  // aust pera de keno
         adapter.setData(list);
         Task_List.setAdapter(adapter);
 
