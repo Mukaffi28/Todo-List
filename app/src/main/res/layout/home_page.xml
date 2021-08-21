@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/r"
+    >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp">
+
+        <TextView
+            android:layout_margin="5sp"
+            android:id="@+id/red"
+            android:padding="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:background="@drawable/textview_back1"
+            android:text="Task will be done by tommorow"
+            android:textSize="35sp"
+            android:layout_alignParentRight="true"
+
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+       <Button
+           android:id="@+id/Addtask"
+           android:layout_width="70sp"
+           android:layout_height="70sp"
+           android:textSize="50sp"
+           android:textColor="@color/white"
+           android:background="@drawable/button_back"
+           android:fontFamily="serif-monospace"
+           android:layout_alignParentEnd="true"
+           android:layout_above="@+id/homelinear2"
+           android:layout_marginEnd="2sp"
+           android:layout_marginBottom="10sp"
+
+
+
+           android:text="@string/add"
+
+           />
+
+
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/homelinear2"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal"
+
+        android:background="@drawable/border"
+
+        >
+
+        <ImageButton
+
+            android:id="@+id/imageButton1"
+            android:layout_width="82sp"
+            android:layout_height="80sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/communication_50px"
+            android:background="@drawable/border"
+
+
+
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="82sp"
+            android:layout_height="80sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/combo_chart_50px"
+            android:background="@drawable/border"/>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="82sp"
+            android:layout_height="80sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home_page_50px"
+            android:background="@drawable/border"/>
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="82sp"
+            android:layout_height="80sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/timetable_50px"
+            android:background="@drawable/border"/>
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="82sp"
+            android:layout_height="80sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/more"
+            android:background="@drawable/border"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
