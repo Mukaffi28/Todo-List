@@ -1,7 +1,6 @@
 package com.Rijeet_Mukaffi.todolist;
 
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 
@@ -16,6 +15,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,22 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 TextView b =new TextView( MainActivity.this);
 
 
-                taskInput.setSingleLine();
-                AlertDialog dialog = new AlertDialog.Builder(MainActivity.this)
-                        .setTitle("Please Add a new Task")
-                        .setMessage("What is Your New Task?")
-                        .setView(taskInput)
 
-                        .setPositiveButton("Add Task", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                list.add(taskInput.getText().toString());
-                                adapter.setData(list);
-                            }
-                        })
-                        .setNegativeButton("Cancel", null)
-                        .create();
-                dialog.show();
             }
 
         });
@@ -98,6 +84,5 @@ public class MainActivity extends AppCompatActivity {
             textview.setText(list.get(position));
             return rowView;
         }
-
     }
 }
