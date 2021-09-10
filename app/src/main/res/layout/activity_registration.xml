@@ -3,12 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
+
     android:background="#F9EA85"
     tools:context=".Registration">
 
     <EditText
         android:id="@+id/editTextTextPersonNamereg"
+
+
         android:layout_width="0sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
@@ -21,6 +25,7 @@
         android:textColorHint="@color/teal_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,6 +41,7 @@
         android:inputType="textPersonName"
         android:textColor="#065E50"
         android:textColorHint="@color/teal_700"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,6 +49,7 @@
 
     <EditText
         android:id="@+id/phonoreg"
+
         android:layout_width="0sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
@@ -53,6 +60,7 @@
         android:inputType="textPhonetic"
         android:textColor="#065E50"
         android:textColorHint="@color/teal_700"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,6 +76,7 @@
         android:ems="10"
         android:hint="Email Id"
         android:inputType="textPersonName"
+
         android:textColor="#065E50"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.46"
@@ -96,7 +105,9 @@
         android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="44sp"
+
         android:background="#0ADAB8"
         android:text="Sign Up"
         android:textColor="#EFEFEF"
@@ -111,6 +122,7 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="68sp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -128,6 +140,7 @@
         android:textSize="15sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/progressBarreg"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signup" />

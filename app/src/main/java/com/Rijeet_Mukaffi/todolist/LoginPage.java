@@ -1,6 +1,7 @@
 package com.Rijeet_Mukaffi.todolist;
 
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -26,10 +27,13 @@ public class LoginPage extends AppCompatActivity {
     ProgressBar progressBar;
     FirebaseAuth fAuth;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
+
+
 
         email =findViewById(R.id.usernameeditText);
         password =findViewById(R.id.passwordEdittext);
@@ -87,6 +91,7 @@ public class LoginPage extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),Registration.class));
             }
         });
+
 
 
 
