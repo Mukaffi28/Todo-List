@@ -24,65 +24,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        final List<String> list = new ArrayList<>();
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.addtask);
-        final ListView Task_List =findViewById(R.id.list);
-        final TextAdapter adapter = new TextAdapter();
-// ASDFGH
-  // aust pera de keno
-  // GIT
-        adapter.setData(list);
-        Task_List.setAdapter(adapter);
-
-        final Button newTaskButton = findViewById(R.id.Addtask);
-        newTaskButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                EditText taskInput = new EditText( MainActivity.this);
-                TextView b =new TextView( MainActivity.this);
+        setContentView(R.layout.home_page);
 
 
 
             }
 
-        });
-    }
-
-    class TextAdapter extends BaseAdapter {
-        List<String> list = new ArrayList<>();
-        void setData(List<String> mList){
-            list.clear();
-            list.addAll(mList);
-            notifyDataSetChanged();
-        }
-        @Override
-
-        public int getCount(){
-            return list.size();
-        }
-        @Override
-        public Object getItem(int position)
-        {     return null;
-        }
-
-        @Override
-
-        public long getItemId(int position)
-        {     return 0;
         }
 
 
-        @Override
 
-        public View getView(int position, View convertView, ViewGroup parent)
-        {
-            LayoutInflater inflater = (LayoutInflater)
-                    MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View rowView = inflater.inflate(R.layout.tasklist, parent,  false);
-            TextView textview = rowView.findViewById(R.id.Task);
-            textview.setText(list.get(position));
-            return rowView;
-        }
-    }
-}
+
+
+
