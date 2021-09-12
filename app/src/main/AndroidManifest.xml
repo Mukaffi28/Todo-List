@@ -11,9 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ToDOlist">
+
         <activity android:name=".Calenderdemo"></activity>
         <activity android:name=".ShowAllTask" />
         <activity android:name=".Taskadd" />
+
         <activity android:name=".Registration" />
         <activity android:name=".LoginPage">
             <intent-filter>
