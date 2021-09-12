@@ -9,6 +9,7 @@ import android.view.View;
 
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -27,7 +28,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Registration extends AppCompatActivity {
     EditText name,email,password,phone;
     TextView login;
-    Button sign;
+    ImageView sign;
     FirebaseAuth fAuth;
     ProgressBar progressBar;
     @Override
@@ -64,11 +65,11 @@ public class Registration extends AppCompatActivity {
             }
             progressBar.setVisibility(View.VISIBLE);
             if(fAuth.getCurrentUser()!=null)
-            {
+          /*  {
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
                 finish();
 
-            }
+            }*/
 
             // register fireBase
 
@@ -78,7 +79,7 @@ public class Registration extends AppCompatActivity {
                     if(task.isSuccessful()){
 
                         Toast.makeText(Registration.this, "User Created", Toast.LENGTH_SHORT).show();
-                       startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                       startActivity(new Intent(getApplicationContext(),LoginPage.class));
 
                     }
                     else

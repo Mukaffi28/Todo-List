@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.Rijeet_Mukaffi.todolist">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ToDOlist">
 
-        <activity android:name=".Task_Reminder_Activity"></activity>
+        <activity android:name=".Calenderdemo"></activity>
+        <activity android:name=".ShowAllTask" />
+        <activity android:name=".Taskadd" />
+
         <activity android:name=".Registration" />
         <activity android:name=".LoginPage">
             <intent-filter>

@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,7 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginPage extends AppCompatActivity {
     EditText email,password;
-    Button login;
+    ImageView login;
     TextView creatAccpage;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
@@ -74,15 +75,16 @@ public class LoginPage extends AppCompatActivity {
 
                         Toast.makeText(LoginPage.this, "Logged in SuccessFully", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getApplicationContext(),MainActivity.class));
-
+                        progressBar.setVisibility(View.INVISIBLE);
 
                     }else {
                         Toast.makeText(LoginPage.this, "Error! "+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-
+                        progressBar.setVisibility(View.INVISIBLE);
 
                     }
                 }
             });
+
         });
 
         creatAccpage.setOnClickListener(new View.OnClickListener() {
@@ -92,7 +94,13 @@ public class LoginPage extends AppCompatActivity {
             }
         });
 
+        email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                email.setText(" ");
 
+            }
+        });
 
 
 
