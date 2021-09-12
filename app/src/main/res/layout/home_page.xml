@@ -5,127 +5,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#305294"
     android:id="@+id/r"
     >
 
-    <RelativeLayout android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="779sp"
-        android:layout_margin="5sp">
+        >
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="600sp"
+           >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+               >
 
-                <TextView
-                    android:id="@+id/red"
+                <ImageView
+                    android:id="@+id/addrem"
                     android:layout_width="match_parent"
-                    android:layout_height="200sp"
-                    android:layout_marginStart="5sp"
-                    android:layout_marginTop="5sp"
-                    android:layout_marginEnd="5sp"
-                    android:layout_marginBottom="5sp"
-
-
-                    android:background="@drawable/textview_back1"
-                    android:padding="15sp"
-                    android:text="Task will be done by tommorow"
-                    android:textSize="35sp" />
-
-                <TextView
-                    android:id="@+id/textView"
+                    android:layout_height="150sp"
+                    android:clickable="true"
+                    android:src="@drawable/alarm"
+                    android:onClick="coustomButtonClick"
+                    />
+                <ImageView
+                    android:id="@+id/addlist"
                     android:layout_width="match_parent"
-                    android:layout_height="200sp"
-                    android:layout_marginStart="5sp"
-                    android:layout_marginTop="5sp"
-                    android:layout_marginEnd="5sp"
-                    android:layout_marginBottom="5sp"
-
-
-                    android:background="@drawable/textview_back1"
-
-                    android:padding="15sp"
-                    android:text="Task will be done by tommorow"
-                    android:textSize="35sp"/>
-
-                <TextView
-                    android:id="@+id/textView2"
+                    android:layout_height="150sp"
+                    android:clickable="true"
+                    android:src="@drawable/add_list"
+                    android:onClick="coustomButtonClick"
+                    />
+                <ImageView
+                    android:id="@+id/addtask"
                     android:layout_width="match_parent"
-                    android:layout_height="200sp"
-                    android:layout_marginStart="5sp"
-                    android:layout_marginTop="5sp"
-                    android:layout_marginEnd="5sp"
-                    android:layout_marginBottom="5sp"
+                    android:layout_height="150sp"
+                    android:clickable="true"
+                    android:src="@drawable/add_task"
+                    android:onClick="coustomButtonClick"
+                    />
 
-
-                    android:background="@drawable/textview_back1"
-                    android:padding="15sp"
-                    android:text="Task will be done by tommorow"
-                    android:textSize="35sp" />
-
-                <TextView
-                    android:id="@+id/textView3"
+                <ImageView
+                    android:id="@+id/showrem"
                     android:layout_width="match_parent"
-                    android:layout_height="200sp"
-                    android:layout_marginStart="5sp"
-                    android:layout_marginTop="5sp"
-                    android:layout_marginEnd="5sp"
-                    android:layout_marginBottom="5sp"
+                    android:layout_height="150sp"
+                    android:clickable="true"
+                    android:onClick="coustomShowButtonClick"
+                    android:src="@drawable/show_alarm" />
 
-
-                    android:background="@drawable/textview_back1"
-                    android:padding="15sp"
-                    android:text="Task will be done by tommorow"
-                    android:textSize="35sp"/>
-
-                <TextView
-                    android:id="@+id/textView4"
+                <ImageView
+                    android:id="@+id/showlist"
                     android:layout_width="match_parent"
-                    android:layout_height="200sp"
-                    android:layout_marginStart="5sp"
-                    android:layout_marginTop="5sp"
-                    android:layout_marginEnd="5sp"
-                    android:layout_marginBottom="5sp"
-
-
-                    android:background="@drawable/textview_back1"
-                    android:padding="15sp"
-                    android:text="Task will be done by tommorow"
-                    android:textSize="35sp" />
-
-                <TextView
-                    android:id="@+id/textView5"
+                    android:layout_height="150sp"
+                    android:clickable="true"
+                    android:src="@drawable/show_list"
+                    android:onClick="coustomShowButtonClick"
+                    />
+                <ImageView
+                    android:id="@+id/showtask"
                     android:layout_width="match_parent"
-                    android:layout_height="200sp"
-                    android:layout_marginStart="5sp"
-                    android:layout_marginTop="5sp"
-                    android:layout_marginEnd="5sp"
-                    android:layout_marginBottom="5sp"
-
-
-                    android:background="@drawable/textview_back1"
-                    android:padding="15sp"
-                    android:text="Task will be done by tommorow"
-                    android:textSize="35sp"/>
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="200sp"
-                    android:layout_marginStart="5sp"
-                    android:layout_marginTop="5sp"
-                    android:layout_marginEnd="5sp"
-                    android:layout_marginBottom="5sp"
-
-
-                    android:background="@drawable/textview_back1"
-                    android:padding="15sp"
-                    android:text="Task will be done by tommorow"
-                    android:textSize="35sp" />
+                    android:layout_height="150sp"
+                    android:clickable="true"
+                    android:src="@drawable/show_task"
+                    android:onClick="coustomShowButtonClick"
+                    />
             </LinearLayout>
         </ScrollView>
 
@@ -147,7 +95,7 @@
            android:layout_above="@+id/homelinear2"
            android:layout_marginEnd="2sp"
            android:layout_marginBottom="10sp"
-
+           android:onClick="coustomButtonClick"
 
 
            android:text="@string/add"

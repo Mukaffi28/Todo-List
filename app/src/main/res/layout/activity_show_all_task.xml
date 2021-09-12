@@ -1,9 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShowAllTask">
+    tools:context=".ShowAllTask"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    >
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+      />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_view"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/no_reminder_text"
+            android:padding="16sp"
+            android:gravity="center"
+            android:text="Click on the Button to begin creating your Task!"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/Addtask"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16sp"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_back"
+        android:fontFamily="serif-monospace"
+        android:text="@string/add"
+
+        />
+
+
+
+
+</RelativeLayout>
+
+
+
+

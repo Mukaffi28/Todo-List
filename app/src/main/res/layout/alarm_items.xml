@@ -4,14 +4,16 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:background="?android:attr/selectableItemBackground"
-android:layout_height="86sp">
+android:layout_height="86sp"
+    >
 
 <ImageView android:layout_width="40sp"
     android:layout_height="40sp"
     android:layout_marginLeft="16sp"
     android:layout_marginRight="16sp"
     android:layout_centerVertical="true"
-    android:id="@+id/thumbnail_image"/>
+    android:id="@+id/thumbnail_image"
+    android:src="@drawable/ic_add_alert_black_24dp"/>
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -30,8 +32,9 @@ android:layout_height="86sp">
         android:ellipsize="end"
         android:maxLines="2"
         android:layout_height="wrap_content"
-        android:textColor="@color/abc_primary_text_material_dark"
+        android:textColor="@color/black"
         tools:text="Title"
+        tools:textColor="@color/black"
         android:textSize="20sp"/>
 
     <TextView
@@ -41,7 +44,8 @@ android:layout_height="86sp">
         android:singleLine="true"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:textColor="@color/abc_secondary_text_material_dark"
+        tools:textColor="@color/black"
+        android:textColor="@color/black"
         tools:text="Date and Time"/>
 
     <TextView
@@ -51,7 +55,8 @@ android:layout_height="86sp">
         android:singleLine="true"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:textColor="@color/abc_secondary_text_material_dark"
+        android:textColor="@color/black"
+        tools:textColor="@color/black"
         tools:text="Repeat No and Type"/>
 
 </LinearLayout>
