@@ -1,5 +1,6 @@
 # Todo-List
 Introduction:
+
 In this android development project, we made a simple “To Do List”
 with real-time Database and Fire-store Database. This ‘To Do list’ is
 a task management app to help you stay organized and manage your
@@ -9,6 +10,7 @@ productivity and focus on what matters to you. ‘To Do List’ makes it
 easy to stay organized and manage your life.
 
 Motivation:
+
 Almost everyone struggles with getting stuff done. But some of us struggle with
 the stage before that: just figuring out what it is we need to do. The to-do list is
 the answer. It’s a time-honored system that’s beautiful in its simplicity: work out
