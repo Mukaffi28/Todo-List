@@ -7,6 +7,7 @@ day-to-day. You can use ‘To Do List’ to make shopping lists or task
 checklist, take notes, plan an event, or set reminders to increase your
 productivity and focus on what matters to you. ‘To Do List’ makes it
 easy to stay organized and manage your life.
+
 Motivation:
 Almost everyone struggles with getting stuff done. But some of us struggle with
 the stage before that: just figuring out what it is we need to do. The to-do list is
